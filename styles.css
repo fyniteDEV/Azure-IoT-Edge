@@ -76,3 +76,7 @@ p {
   text-align: justify;
   text-indent: 20px;
 }
+
+img {
+  width: 100%;
+}
