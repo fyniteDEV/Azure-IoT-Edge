@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,16 +14,25 @@
     <h1>Az Azure IoT Edge</h1>
 
     <p>
-      Az Azure IoT Edge szolgáltatás a felhőbeli elemzéseket és egyéni üzleti logikákat eszközökre helyezi át, hogy a szervezet az üzleti elemzésekre tudjon koncentrálni az adatkezelés helyett. Az üzleti logikát szabványos tárolóba csomagolva kibővítheti IoT-megoldását, majd bármely eszközön üzembe helyezheti ezeket a tárolókat, és figyelheti az összes felhőből.
+      Az Azure IoT Edge szolgáltatás a felhőbeli elemzéseket és egyéni üzleti logikákat eszközökre helyezi át, hogy a
+      szervezet az üzleti elemzésekre tudjon koncentrálni az adatkezelés helyett. Az üzleti logikát szabványos tárolóba
+      csomagolva kibővítheti IoT-megoldását, majd bármely eszközön üzembe helyezheti ezeket a tárolókat, és figyelheti
+      az összes felhőből.
     </p>
     <p>
-      Az elemzések jelentős üzleti értékeket teremthetnek az IoT-megoldásokban, de nem szükséges minden elemzést a felhőben végezni. Ha a lehető leggyorsabban szeretne reagálni a vészhelyzetekre, a biztonsági rendellenesség észlelése számítási feladatokat a peremhálózat szélén is futtathatja. Ha csökkenteni kívánja a sávszélességi költségeket, és nem kívánja átvinni az terabájtos nyers adatokat, akkor az adatokat helyileg törölheti és összesítheti, majd csak elemzés céljából elküldheti a felhőbe a bepillantást.
+      Az elemzések jelentős üzleti értékeket teremthetnek az IoT-megoldásokban, de nem szükséges minden elemzést a
+      felhőben végezni. Ha a lehető leggyorsabban szeretne reagálni a vészhelyzetekre, a biztonsági rendellenesség
+      észlelése számítási feladatokat a peremhálózat szélén is futtathatja. Ha csökkenteni kívánja a sávszélességi
+      költségeket, és nem kívánja átvinni az terabájtos nyers adatokat, akkor az adatokat helyileg törölheti és
+      összesítheti, majd csak elemzés céljából elküldheti a felhőbe a bepillantást.
     </p>
 
     <h2>IoT Edge-futtatókörnyezet</h2>
 
     <p>
-      Az Azure IoT Edge-futtatókörnyezet egyéni és felhőbeli logikák is használatát is lehetővé teszi az IoT Edge-eszközökön. A futtatókörnyezet a IoT Edge eszközön helyezkedik el, és felügyeleti és kommunikációs műveleteket hajt végre. A futtatókörnyezet számos funkciót lát el:
+      Az Azure IoT Edge-futtatókörnyezet egyéni és felhőbeli logikák is használatát is lehetővé teszi az IoT
+      Edge-eszközökön. A futtatókörnyezet a IoT Edge eszközön helyezkedik el, és felügyeleti és kommunikációs
+      műveleteket hajt végre. A futtatókörnyezet számos funkciót lát el:
     </p>
 
     <ul>
@@ -39,7 +49,8 @@
         Jelenti a modulok állapotát a felhőnek a távoli monitorozáshoz.
       </li>
       <li>
-        Felügyeli az alárendelt levelek eszközei és egy IoT Edge eszköz közötti kommunikációt egy IoT Edge eszközön lévő modulok, valamint egy IoT Edge eszköz és a felhő között.
+        Felügyeli az alárendelt levelek eszközei és egy IoT Edge eszköz közötti kommunikációt egy IoT Edge eszközön lévő
+        modulok, valamint egy IoT Edge eszköz és a felhő között.
       </li>
     </ul>
 
@@ -51,35 +62,52 @@
     <h2>Verzióelőzmények</h2>
 
     <p>
-      Ez a táblázat a IoT Edge csomagok kiadásának legújabb verzióit tartalmazza, és kiemeli az egyes verziókra vonatkozó dokumentációs frissítéseket.
+      Ez a táblázat a IoT Edge csomagok kiadásának legújabb verzióit tartalmazza, és kiemeli az egyes verziókra
+      vonatkozó dokumentációs frissítéseket.
     </p>
 
-    Kibocsátási megjegyzések és eszközök
-    Típus
-    Dátum
-    Legfontosabb tudnivalók
+    <table>
+      <tr>
+        <th>Kibocsátási megjegyzések és eszközök</th>
+        <th>Típus</th>
+        <th>Dátum</th>
+        <th>Legfontosabb tudnivalók</th>
+      </tr>
 
-    1,2 – RC1
-    Előnézet
-    2020. november
-    Az átjárók mögött IoT Edge eszközök
-    IoT Edge MQTT-közvetítő
+      <tr>
+        <td style="text-align: center;">1,2 – RC1</td>
+        <td>Előnézet</td>
+        <td>2020. november</td>
+        <td>
+          Az átjárók mögött IoT Edge eszközök<br>
+          IoT Edge MQTT-közvetítő
+        </td>
+      </tr>
 
-    1.0.10
-    Stable
-    2020. október
-    UploadSupportBundle Direct metódus
-    Futásidejű mérőszámok feltöltése
-    Útvonal prioritása és élettartama
-    Modul indítási sorrendje
-    X. 509 manuális kiépítés
+      <tr>
+        <td style="text-align: center;">1.0.10</td>
+        <td>Stable</td>
+        <td>2020. október</td>
+        <td>
+          UploadSupportBundle Direct metódus<br>
+          Futásidejű mérőszámok feltöltése<br>
+          Útvonal prioritása és élettartama<br>
+          Modul indítási sorrendje<br>
+          X. 509 manuális kiépítés<br>
+        </td>
+      </tr>
 
-    1.0.9
-    Stable
-    2020. március
-    X. 509 automatikus kiépítés a DPS-vel
-    RestartModule Direct metódus
-    támogatás – Bundle parancs
+      <tr>
+        <td style="text-align: center;">1.0.9</td>
+        <td>Stable</td>
+        <td>2020. március</td>
+        <td>
+          X. 509 automatikus kiépítés a DPS-vel<br>
+          RestartModule Direct metódus<br>
+          támogatás – Bundle parancs<br>
+        </td>
+      </tr>
+    </table>
 
     Forrás:
 
